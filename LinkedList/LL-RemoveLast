@@ -1,7 +1,4 @@
 
-// THIS GOES IN YOUR MAIN CLASS TO TEST YOUR CODE:
-// -----------------------------------------------
-
 package datastructures.linkedlist;
 
 public class Main {
@@ -9,40 +6,32 @@ public class Main {
     public static void main(String[] args) {
 
         LinkedList myLinkedList = new LinkedList(1);
-        myLinkedList.makeEmpty();
-        myLinkedList.append(1);
         myLinkedList.append(2);
 
-        myLinkedList.getHead();
-        myLinkedList.getTail();
-        myLinkedList.getLength();
-
-        System.out.println("\nLinked List:");
-        myLinkedList.printList();
+        // (2) Items - Returns 2 Node
+        System.out.println(myLinkedList.removeLast().value);
+        // (1) Item - Returns 1 Node
+        System.out.println(myLinkedList.removeLast().value);
+        // (0) Items - Returns null
+        System.out.println(myLinkedList.removeLast());
         
-        /*
-       		EXPECTED OUTPUT:
+        
+    	/*
+        	EXPECTED OUTPUT:
         	----------------
-        	Head: 1
-        	Tail: 2
-        	Length: 2
-        
-        	Linked List:
-        	1
         	2
-        
+        	1
+        	null
+
      	*/
 
     }
-    
+
 }
 
 
 
 
-
-// THIS CODE GOES IN YOUR LINKEDLIST CLASS:
-// ---------------------------------------- 
    
 package datastructures.linkedlist;
 
@@ -96,24 +85,35 @@ public class LinkedList {
     public void getLength() {
         System.out.println("Length: " + length);
     }
-    
-    public void makeEmpty() {
-        head = null;
-        tail = null;
-        length = 0;
+
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
+    }
+    public Node removeLast(){
+        if(Length==0) return null;
+        Node temp = head;
+        Node pre = head;
+        while (temp.next != null){
+            pre = temp;
+            temp = temp.next;
+        }
+        temp = pre;
+        temp.next = null;
+        length--;
+        if (lenght==0){
+            head=null;
+            tail=null;
+        }
+        return null;
     }
 
-	// WRITE APPEND METHOD HERE //
-	//                          //
-	//                          //
-	//                          //
-	//                          //
-	//////////////////////////////
-
 }
-
-
-
-
-
 

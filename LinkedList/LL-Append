@@ -1,14 +1,13 @@
-
-// THIS GOES IN YOUR MAIN CLASS TO TEST YOUR CODE:
-// -----------------------------------------------
-
 package datastructures.linkedlist;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        LinkedList myLinkedList = new LinkedList(4);
+        LinkedList myLinkedList = new LinkedList(1);
+        myLinkedList.makeEmpty();
+        myLinkedList.append(1);
+        myLinkedList.append(2);
 
         myLinkedList.getHead();
         myLinkedList.getTail();
@@ -16,30 +15,16 @@ public class Main {
 
         System.out.println("\nLinked List:");
         myLinkedList.printList();
-
-        /*
-            EXPECTED OUTPUT:
-            ----------------
-            Head: 4
-            Tail: 4
-            Length: 1
-            
-            Linked List:
-            4
-
-        */
+        
+    
 
     }
-
+    
 }
 
 
 
-
-
-// THIS CODE GOES IN YOUR LINKEDLIST CLASS:
-// ----------------------------------------
-      
+   
 package datastructures.linkedlist;
 
 
@@ -92,6 +77,28 @@ public class LinkedList {
     public void getLength() {
         System.out.println("Length: " + length);
     }
+    
+    public void makeEmpty() {
+        head = null;
+        tail = null;
+        length = 0;
+    }
+        public void append(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+        length++;
+    }
 
 }
+
+
+
+
+
 

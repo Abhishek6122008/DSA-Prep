@@ -1,7 +1,4 @@
 
-// These methods go in Linked List class   
-   
-   
     public void printList() {
         Node temp = head;
         while (temp != null) {
