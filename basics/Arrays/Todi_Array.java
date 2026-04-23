@@ -13,11 +13,14 @@ public class Todi_Array {
                 numbers[i][j]= sc.nextInt();
             }
         }
+        System.out.println("pls tell what number u wish to find");
+        int  find = sc.nextInt();
         for(int i = 0; i<rows;i++){
             for(int j = 0;j<cols;j++){
-                System.out.print(numbers[i][j] + " ");
+                if(numbers[i][j]== find){
+                    System.out.println(i+" "+j);
+                }
             }
-            System.out.println();
         }
     }
 }
