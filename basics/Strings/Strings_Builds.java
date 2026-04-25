@@ -9,6 +9,9 @@ public class Strings_Builds {
         //set character at index 0
         sb.setCharAt(0,'P');
         System.out.println(sb);
-
+        sb.insert(0,'S');
+        System.out.println(sb);
+        sb.delete(0,1);
+        System.out.println(sb);
     }
 }
