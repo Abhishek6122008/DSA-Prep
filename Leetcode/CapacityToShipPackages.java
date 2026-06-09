@@ -13,7 +13,21 @@ public class CapacityToShipPackages {
         }
         while(min<=max){
             int mid = min+(max-min)/2;
+            int day = 0;
+            for(int num:weights){
+                int diff = mid-num;
+                if(diff==0){
+                    day++;
+                    diff = mid;
+                }
 
+            }
+            if(days>day){
+                max = mid-1;
+                System.out.println(mid);
+            }else{
+                min = mid+1;
+            }
         }
     }
 }
