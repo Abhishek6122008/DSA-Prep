@@ -20,7 +20,6 @@ public class firstUniqueChar {
                 unique = hm.get(ch)-1;
             }
         }
-
         System.out.println(unique);
     }
 }

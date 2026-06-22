@@ -6,7 +6,6 @@ public class halloumiBoxes {
         while (t-- > 0) {
             int n = sc.nextInt();
             int k = sc.nextInt();
-
             int[] arr = new int[n];
 
             for (int i = 0; i < n; i++) {
@@ -20,7 +19,6 @@ public class halloumiBoxes {
                     break;
                 }
             }
-
             if (k > 1 || sorted) {
                 System.out.println("YES");
             } else {

@@ -6,7 +6,6 @@ public class twoPermutations {
         int t = sc.nextInt();
         while (t-- > 0) {
             int n = sc.nextInt();
-
             for (int i = 0; i < n; i++) {
                 int a = sc.nextInt();
                 System.out.print(n + 1 - a);
