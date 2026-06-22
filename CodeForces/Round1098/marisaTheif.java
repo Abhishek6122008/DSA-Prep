@@ -1,7 +1,5 @@
 package Round1098;
-
 import java.util.*;
-
 public class marisaTheif {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

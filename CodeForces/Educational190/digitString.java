@@ -1,17 +1,14 @@
 package Educational190;
 import java.util.*;
 import java.io.*;
-
 public class digitString {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine().trim());
         StringBuilder sb = new StringBuilder();
-
         while (t-- > 0) {
             String s = br.readLine().trim();
             long removals = 0;
-
             long fours = s.chars().filter(c -> c == '4').count();
             removals += fours;
             long oneThreeCount = 0;
