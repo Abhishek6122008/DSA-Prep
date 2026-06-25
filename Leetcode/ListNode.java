@@ -2,7 +2,7 @@ package Leetcode;
 
 public class ListNode {
     int val;
-    ListNode next;
+    removeNth next;
 
     ListNode() {}
 
@@ -10,7 +10,7 @@ public class ListNode {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    ListNode(int val, removeNth next) {
         this.val = val;
         this.next = next;
     }
