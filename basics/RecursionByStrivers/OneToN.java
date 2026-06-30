@@ -1,4 +1,4 @@
-package basics.RecursionByGFG;
+package basics.RecursionByStrivers;
 
 import java.util.Scanner;
 

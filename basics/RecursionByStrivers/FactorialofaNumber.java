@@ -1,4 +1,4 @@
-package basics.RecursionByGFG;
+package basics.RecursionByStrivers;
 
 public class FactorialofaNumber {
     public static int fact(int n){

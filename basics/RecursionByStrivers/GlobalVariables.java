@@ -1,4 +1,4 @@
-package basics.RecursionByGFG;
+package basics.RecursionByStrivers;
 
 public class GlobalVariables {
     static int x = 10;

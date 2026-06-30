@@ -1,4 +1,4 @@
-package basics.RecursionByGFG;
+package basics.RecursionByStrivers;
 
 public class FunctionCallingItself {
     public static void main(String[] args) {
