@@ -1,6 +1,6 @@
 package datastructures.linkedlist;
 
-public class Main {
+public class Class14_Q2 {
 
     public static void main(String[] args) {
 
