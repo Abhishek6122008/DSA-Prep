@@ -14,6 +14,24 @@ public class Session2 {
         //put i = a0
         //put j = bn-1
         //if sum>target u decremenmt j
-        //
+        int i = 0;
+        int j = n-1;
+        int v = 0;
+        int first = 0;
+        int second = 0;
+        while (i < n && j >= 0) {
+            if(a[i]+b[j]<=target){
+                int sum = a[i]+b[j];
+                if(sum>v){
+                    first= a[i];
+                    second= b[j];
+                }
+                i=i+1;
+            }
+            else{
+                j=j-1;
+            }
+        }
+        System.out.println(first+" "+second);
     }
 }
